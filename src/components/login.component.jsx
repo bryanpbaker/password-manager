@@ -20,10 +20,10 @@ export default class Login extends Component {
 						<input className="form-control" type="password"/>
 					</div>
 					<div className="form-group">
-						<button>Login</button>
+						<button className="btn btn-success">Login</button>
 					</div>
 				</form>
-				<Link to="register">Don't have an account? Register!</Link>
+				<Link className="text-info" to="register">Don't have an account? Register!</Link>
 			</div>
 		)
 	}

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
+import activeComponent from 'react-router-active-component';
 
 import Header from './components/header.component';
 import Home from './components/home.component';

@@ -27,7 +27,7 @@ export default class Register extends Component {
 						<input className="form-control" type="text"/>
 					</div>
 					<div className="form-group">
-						<button>Register</button>
+						<button className="btn btn-success">Register</button>
 					</div>
 				</form>
 			</div>

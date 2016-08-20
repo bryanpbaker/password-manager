@@ -1,5 +1,11 @@
 .header{
-	a{
-		color: white;
+	.navbar{
+		a{
+			color: white;
+
+			&:hover, &:focus, &:visited, &.active{
+				background: #333;
+			}
+		}
 	}
 }
