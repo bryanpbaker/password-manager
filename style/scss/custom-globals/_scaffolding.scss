@@ -1,3 +1,35 @@
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 body{
-    padding-top: 40px;
+    padding-top: 0;
+}
+
+.container-fluid{
+	height: 100%;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: box;
+
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-ms-box-orient: horizontal;
+	box-orient: horizontal;
+
+	padding-left: 0;
+}
+
+.main, .app{
+	height: 100%;
+}
+
+.content{
+	padding-left: 15px;
+	width: 80%;
 }

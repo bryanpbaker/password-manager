@@ -4,6 +4,7 @@ import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
 import activeComponent from 'react-router-active-component';
 
 import Header from './components/header.component';
+import Sidebar from './components/sidebar.component';
 import Home from './components/home.component';
 import Login from './components/login.component';
 import Register from './components/register.component';
@@ -15,7 +16,12 @@ const App = (props) => {
     return(
         <div className="app">
             <Header/>
-            {props.children}
+            <div className="container-fluid">
+                <Sidebar></Sidebar>
+                <div className="content">
+                    {props.children}
+                </div>
+            </div>
         </div>
     )
 }
@@ -28,4 +34,4 @@ ReactDOM.render(
             <Route path="register" component={Register}></Route>
         </Route>
     </Router>
-, document.querySelector('.container'));
+, document.querySelector('.main'));
