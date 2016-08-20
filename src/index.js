@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
 
-import Header from './components/component_header.jsx';
-import Test from './components/component_test.jsx';
+import Header from './components/header.component';
+import Home from './components/home.component';
+import Login from './components/login.component';
+import Register from './components/register.component';
 
 import '../style/main.scss';
 
@@ -12,7 +14,6 @@ const App = (props) => {
     return(
         <div className="app">
             <Header/>
-            <Link to="/">Home</Link> &nbsp; <Link to="test">Test Route</Link>
             {props.children}
         </div>
     )
@@ -21,7 +22,9 @@ const App = (props) => {
 ReactDOM.render(
     <Router history={browserHistory}>
         <Route path="/" component={App}>
-            <Route path="test" component={Test}></Route>
+            <IndexRoute component={Home}></IndexRoute>
+            <Route path="login" component={Login}></Route>
+            <Route path="register" component={Register}></Route>
         </Route>
     </Router>
 , document.querySelector('.container'));
