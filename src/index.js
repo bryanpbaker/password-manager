@@ -8,6 +8,9 @@ import Sidebar from './components/sidebar.component';
 import Home from './components/home.component';
 import Login from './components/login.component';
 import Register from './components/register.component';
+import AccountsPage from './components/accounts-page.component';
+import AccountDetail from './components/account-detail.component';
+
 
 import '../style/main.scss';
 
@@ -32,6 +35,8 @@ ReactDOM.render(
             <IndexRoute component={Home}></IndexRoute>
             <Route path="login" component={Login}></Route>
             <Route path="register" component={Register}></Route>
+            <Route path="accounts" component={AccountsPage}></Route>
+            <Route path=":accountID" component={AccountDetail}></Route>
         </Route>
     </Router>
 , document.querySelector('.main'));

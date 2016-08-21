@@ -7,7 +7,8 @@
 			color: white;
 
 			&:hover, &:focus, &:visited, &.active{
-				background: #333;
+				background: transparent;
+				text-decoration: underline;
 			}
 		}
 	}

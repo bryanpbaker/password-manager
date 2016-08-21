@@ -9,7 +9,23 @@ export default class Sidebar extends Component {
 	render() {
 		return(
 			<div className="col-md-3 sidebar">
-				<h2>Hello</h2>
+				<ul className="nav navbar-nav">
+					<li className="nav-item">
+						<Link className="nav-link" to="/login" activeClassName="active">Login</Link>
+					</li>
+					<li className="nav-item">
+						<Link className="nav-link" to="/accounts" activeClassName="active">Accounts</Link>
+					</li>
+					<li className="nav-item">
+						<Link className="nav-link" to="/profile" activeClassName="active">Profile</Link>
+					</li>
+					<li className="nav-item">
+						<Link className="nav-link" to="/notes" activeClassName="active">Notes</Link>
+					</li>
+					<li className="nav-item">
+						<Link className="nav-link" to="/help" activeClassName="active">Help</Link>
+					</li>
+				</ul>
 			</div>
 		)
 	}

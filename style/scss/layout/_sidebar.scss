@@ -7,4 +7,17 @@
 	-moz-box-flex:  0;
 	-ms-box-flex:  0;
 	box-flex:  0;  
+
+	ul, li{
+		width: 100%;
+	}
+
+	a{
+		color: white;
+		
+		&:hover, &:focus, &:visited, &.active{
+			background-color: transparent !important;
+			text-decoration: underline !important;
+		}
+	}
 }
